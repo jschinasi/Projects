@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Assignment 6 My MYSQL reference page
+Jake Schinasi   10/1/2020-->
+
+<!-- HTML Header -->
+<html lang="en">
+<head>
+<title> My MySQL reference page
+<meta charset="utf-8">
+</title>
+<style> 
+    table   {background-color: rgb(101, 170, 211); color: black;
+            border-collapse: collapse; border: 1px;
+            font-family: arial; font-weight: normal;
+            }
+    th  { background-color: gray;
+        font-size: 17px; font-style: bold;
+    }
+    tr:nth-child(even) {background-color: silver;
+    }
+
+    td  { font-size: 15px; padding-left: 5px; padding-right: 5px;
+    }
+    h1  { color: red; }
+</style>
+</head>
+<!-- Body of the webage -->
+<body>
+</tr>
+</ul>       
+</nav>
+<hr>
+<p>
+<h2> Database Commands </h2>
+<table border="1">
+    <tr>
+        <th> Command </th>
+        <th> Description </th>
+    </tr>
+    <tr>
+        <td> <p> <b> create database if not exists</b></p></td>
+        <td> <b> commands are case insensitive, and must end with a comma</b></td>
+    </tr>
+    <tr>
+    <td> <p> <b> show "database"</b></p></td>
+    <td> <p> this will show all databases on the SQL server</p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> use "database"</b></p   ></td>
+        <td> <p> this will select and use a specific database on the SQL server</p></td>
+    </tr>
+    </table>
+    <h2> Table Column Commands</h2>
+    <table border="1">
+    <tr>
+        <th> Command</th>
+        <th> Description</th>
+    </tr>
+    <tr>
+        <td> <p> <b> CREATE TABLE IF NOT EXISTS table-name (col type , col type);</b></p></td>
+        <td><p> This command creates a table in the chosen database</p> </td> 
+    </tr> 
+    <tr>
+        <td> <p><b> EXPLAIN table-name; </b></p> </td>
+        <td> <p> This commands shows the format of any table</p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> DROP TABLE IF EXISTS table-name;</b></p></td>
+        <td> <p> This command deletes a table from the database</p> </td>
+    </tr>
+    <tr>
+        <td> <p> <b> SOURCE path of SQL file</b></p> </td>
+        <td> <p> accesses an SQL script file from command prompt </p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> Alter TABLE table-name </b></p></td>
+        <td> <p> Adds, deletes, or modifies columns in a table </p></td>
+    </tr>
+    </table>
+    <h2> TABLE DATA COMMANDS </h2>
+    <table border=1>
+    <tr>
+        <th> Command</th>
+        <th> Description </th>
+    </tr>
+    <tr>
+        <td> <p> <b> INT </b></p></td>
+        <td> <p> An integer -2,147,483,648 to 2,147,483,648 </p> </td>
+    </tr>
+    <tr>
+        <td> <p> <b> DECIMAL </b></p> </td>
+        <td> <p>A floating point number thay can specify the number of permissible digits. Example: (5,2) allos -999.99 to 999.99 </p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> DOUBLE </b></p></td>
+        <td> <p> A double-precision floating point number</p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> DATE </b></p></td>
+        <td> <p> A date om the YYYY-MM-DD format </p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> TIME </b></p></td>
+        <td> <p> A time in the HH:MM:SS format</p></td>
+    </tr>
+    <tr> 
+        <td> <p> <b> DATETIME</b></p> </td>
+        <td> <p> A combined date and time in the format YYYY-MM-DD HH:MM:SS</p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> YEAR</b></p></td>
+        <td> <p> A year 1901-2155 in either YY or YYYY format</p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> TIMESTAMP </b></p></td>
+        <td> <p> Automatic date and time of last record entry</p></td>
+    </tr>
+    <tr>
+        <td> <p><b> CHAR() </b></p> </td>
+        <td> <p> A string of defined fixed length up to 255 characters with padding. CHAR(50) for example would limit string to 50 scharacters.</p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> VARCHAR()</b></p></td>
+        <td> <p> A string of variable length up to 255 characters without padding</p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> TEXT </b></p></td>
+        <td> <p> A string up to 65,535 characters long </p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> BLOB </b></p></td>
+        <td> <p> A binary type for variable data </p></td> 
+    </tr>
+    <tr>
+        <td> <b> <p> ENUM </p> </b></td>
+        <td> <p> A single string value from a defined list. Example: ENUM ("blue", "yellow", "green") allows entry of only those clolors</p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> SET </b></p> </td>
+        <td> <p> A string of multiple strings from a defined list.</p> </td>
+    </tr>
+    <tr>
+        <td> <b><p> NOT NULL</p></b> </td>
+        <td> <p> Insists that each record must include a data value in a column</p></td>
+    </tr>
+    <tr>
+        <td> <b> <p> UNIQUE </p></b></td>
+        <td> <p> Insists that records may not duplicate any entry in this column.</p></td>
+    </tr>
+    <tr>
+        <td> <b> <p> AUTO_INCREMENT</p></b></td>
+        <td> <p> Automatically generates a number that ius one more than the previous numeric column</p> </td>
+    </tr>
+    <tr> 
+        <td> <p><b> DEFAULT </b> </p> </td>
+        <td> <p> Specifies a a value to be used where no value is started for this column when a record is inserted </p> </td>
+    </tr>
+    <tr> 
+        <td> <b> <p> PRIMARY KEY </b></td>
+        <td> <p> Specifies the column/columns to be used as the primary key for that table </p></td>
+    </tr>
+    </table>
+</body>
+<footer>
+    <hr>
+    <p style="text-align:center"> </p>
+    <small> (C) Jake Schinasi, 2020 </small>    
+    <br> Email <a href="mailto:jake.schinasi1@marist.edu"> Jake <a>
+</footer>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--    Lab 3 Even More HTML Jake Schinasi
+    9/13/20  
+-->
+<!--    HTML Header -->
+<html lang="en">
+<head>
+<title> Title Reference
+<meta charset="utf-8">
+</title>
+
+<style> 
+    table   {background-color: darkseagreen; color: black;
+            border-collapse: collapse; border: 1px;
+            font-family: arial; font-weight: normal;
+            }
+    th  { background-color: gray;
+        font-size: 17px; font-style: bold;
+    }
+    tr:nth-child(even) {background-color: silver;
+    }
+
+    td  { font-size: 15px; padding-left: 5px; padding-right: 5px;
+    }
+    h1  { color: red; }
+</style>
+</head>
+
+<!--    Body of the webpage -->
+<body>
+<header> <h1 style="color:blue;"> My HTML Reference Page </h1> </header>
+<hr>
+<nav> <ul>
+<tr>
+<td> <a href = "https://www.w3schools.com/html/html5_semantic_elements.asp"> Structural Elements</a> </td> <br>
+<td> <a href = "https://www.w3schools.com/html/html_lists.asp"> Lists </a> </td> <br>
+<td> <a href = "https://www.w3schools.com/html/html_tables.asp"> Tables </a> </td> <br>
+<td> <a href = "https://www.w3schools.com/colors/colors_picker.asp"> <img src="https://www.usability.gov/sites/default/files/images/color-wheel.png"  width="50" height="50"> <a></a> </a> </td> <p>
+
+
+</tr>
+</ul>       
+</nav>
+<hr>
+<p>
+<h2 style="text-align:center;"> HTML Commands </h2>
+<table border="1">
+    <tr>
+        <th> Item </th>
+        <th> Description </th>
+    </tr>
+    <tr>
+        <td> <p> <b> &ltHead Tags> </b> </td> 
+        <td> <p> &ltTitle>  <p> &ltMeta charset="utf-8"> </td>     
+    </tr>
+    <tr>
+        <td> <p> <b> &ltStructural Elements> </b> </td> 
+        <td> <p> &ltHeader> <p> &ltmain> <p> &ltnav> <p> &ltfooter> <p> &ltsection> defines a section</td>
+    </tr>
+    <tr> 
+        <td> <p> <b> Hypertext </b> </p> </td>
+        <td> <p> Anchor tag: &lta href = "Link here"> Link name &lt/a> </td>    
+    </tr>
+    <tr>
+        <td> <p> <b> Horizontal Rule </b> </p> </td>
+        <td> <p> &lthr> </p></td>
+    </tr>
+        <td> <p> <b> Breaks </b> </p> </td>
+        <td> <p> &ltp> = new paragraph </p> &ltbr> = line break </td>
+    <tr> 
+        <td> <p> <b> Formatting </b></p></td>
+        <td> <p> &ltb> Bold and &ltStrong> </p> &lti> italics and &ltemphasis> <p> &ltsmall></p> </td>
+    </tr>
+        <td> <p> <b> Headers</b></p></td>
+        <td> <p> &lth1> - &lth5> </p></td>
+    <tr>
+        <td> <p> <b> &ltimg></b></p></td>
+        <td> <p> Is used to embed an image in HTML page</p></td>
+    </tr>
+    
+       
+</table>
+<h2 style="text-align:center;" > CSS Styles </h2>
+<table border="1">
+    <tr>
+        <th> Item </th>
+        <th> CSS Styles </th>
+    </tr>
+    <tr>
+        <td style="color: blue;"> <p> <b> INLINE STYLE </p></td> <b>
+        <td> <p> style="xxx: y," </p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> back-ground-color; </b></p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> color</b></p></td>
+        <td> <p> text color </p> </td>
+    </tr>
+    <tr> 
+        <td> <p> <b> border-collapse: collapse; </b></p></td>
+        <td> <p> single line border</p> </td>
+    </tr>
+    <tr>
+        <td> <p> <b> border: ?px; </b></p></td>
+        <td> <p> border weight in pixels </p> </td>
+    </tr>
+    <tr>
+        <td> <p> <b> font:family </b></p></td>
+        <td> <p> text font</p> </td>
+    </tr>
+    <tr>
+        <td> <p> <b> font-size?px </b></p></td>
+        <td> <p> font size in pixels</p> </td>
+    </tr>
+    <tr>
+        <td> <p> <b> font-weight </b></p></td>
+        <td> <p> normal or bold </p> </td>
+    </tr>
+    <tr>
+        <td> <p> <b> margin-right: auto; margin-left: auto; </b></p></td>
+        <td> <p> centers table </p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> padding-left: ?px; padding-right: ?px; </p> <b> </td>
+        <td> <p> spaces in table cells </p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> Text-align:center, </p> <b> </td>
+        <td> <p> Center alignment for text </p></td>
+    </tr>
+    <tr>
+        <td> <p> <b> tr:nth-child(even) {background-color: silver;} </p> <b> </td>
+        <td> <p> Specify a background color for every even &lttd> element </p></td>
+    </tr>
+</table>
+<h2 style="text-align: center; color:blue"> Website Design Best Practices </h2>
+<table border="1" style="background-color:white;">
+    <tr>
+        <td> <p> Keep with the same fonts</td>
+    </tr>
+    <tr>
+        <td> <p> Don't add too much text to the page</td>
+    </tr>
+    <tr>
+        <td> <p> Simplify the navagation between pages</td>
+    <tr>
+        <td> <p> Pick a good color scheme</td>
+    </tr>
+    <tr>
+        <td> <p> Try and use shorter paragraphs</td>
+    </tr>
+    </tr>
+
+</table>
+    
+<main>
+</main>
+
+</body>
+<footer>
+    <hr>
+    <p style="text-align:center"> </p>
+    <small> (C) Jake Schinasi, 2020 </small>    
+    <br> Email <a href="mailto:jake.schinasi1@marist.edu"> Jake <a>
+</footer>
+</html>
