@@ -1,1 +1,2 @@
-# This repository contains the files and projects I have created in multiple languages.
+# Welcome to Jake Schinasi's Repository!
+# This repository contains code I wrote in various classes
